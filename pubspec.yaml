@@ -1,0 +1,63 @@
+name: wanigo_mitra
+description: "Aplikasi untuk nasabah WANIGO!"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+ 
+  # UI dan navigasi
+  cupertino_icons: ^1.0.5
+  wanigo_ui: ^0.0.1  
+  get: ^4.6.5  # GetX state management
+  flutter_screenutil: ^5.8.4
+  flutter_svg: ^2.0.7
+ 
+  # Networking dan API
+  dio: ^5.3.2
+  http_parser: ^4.0.2
+  http: ^0.13.5  
+
+  # Penyimpanan lokal
+  flutter_secure_storage: ^9.2.4
+  shared_preferences: ^2.2.0
+ 
+  # Format data
+  intl: ^0.18.1
+ 
+  # Media
+  cached_network_image: ^3.2.3
+  image_picker: ^1.0.2
+ 
+  # Utilitas
+  path_provider: ^2.1.0
+  device_info_plus: ^11.4.0
+  permission_handler: ^12.0.0+1
+
+  # Menambahkan icon package untuk tanpa foreground dan background
+  flutter_launcher_icons: ^0.9.2 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+
+flutter:
+  uses-material-design: true
+ 
+  # Assets - Perbaikan Path Asset
+  assets:
+    - assets/
+    - assets/images/ 
+    - assets/icons/
+    - assets/lottie/
+
+# Konfigurasi untuk flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/wm.png"  
